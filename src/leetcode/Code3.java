@@ -1,5 +1,8 @@
 package leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * 3. Longest Substring Without Repeating Characters
@@ -21,4 +24,20 @@ package leetcode;
  * 没有重复字符，遍历加入哈希表，一次遍历
  */
 public class Code3 {
+
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0) return 0;
+        Map<Character, Integer> dict = new HashMap<>();
+        int start = 0, res = 0;
+        for (int i = 0; i < s.length(); i++) {
+            Character ch = s.charAt(i);
+            Integer pre = dict.get(ch);
+            if (pre != null && pre >= start) {
+                res = Math.max(res, i - start);
+                start = pre + 1;
+            }
+            dict.put(ch, i);
+        }
+        return Math.max(s.length()-start, res);
+    }
 }
