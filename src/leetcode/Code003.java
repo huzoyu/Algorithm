@@ -23,7 +23,7 @@ import java.util.Map;
  * 解题思路：
  * 没有重复字符，遍历加入哈希表，一次遍历
  */
-public class Code3 {
+public class Code003 {
 
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0) return 0;

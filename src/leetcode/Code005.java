@@ -18,7 +18,7 @@ package leetcode;
  * Output: "bb"
  *
  */
-public class Code5 {
+public class Code005 {
 
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) return "";

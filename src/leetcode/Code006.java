@@ -32,7 +32,7 @@ package leetcode;
  *
  *
  */
-public class Code6 {
+public class Code006 {
 
     public String convert(String s, int numRows) {
         if (numRows == 1)

@@ -28,7 +28,7 @@ package leetcode;
  *
  */
 
-public class Code4 {
+public class Code004 {
 
     public double findMedianSortedArrays(int[] A, int[] B) {
         int m = A.length;

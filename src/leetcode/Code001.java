@@ -24,7 +24,7 @@ import java.util.Map;
  * 最优,遍历存入哈希表,一次完成
  */
 
-public class Code1 {
+public class Code001 {
 
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();

@@ -25,7 +25,7 @@ package leetcode;
  *
  */
 
-public class Code7 {
+public class Code007 {
 
     public int reverse(int x) {
         int rev = 0;

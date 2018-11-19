@@ -20,7 +20,7 @@ package leetcode;
  * 两个非空链表表示非负整数，倒序输入，那么就再从尾部取字符，按纸面计算方式即可
  */
 
-public class Code2 {
+public class Code002 {
 
 
     public class ListNode {
